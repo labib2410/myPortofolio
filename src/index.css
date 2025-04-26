@@ -1,0 +1,103 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+/* body{
+  overflow: hidden;
+
+} */
+#root,
+.App {
+    overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+ul{
+list-style: none;
+}
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-img {
+  transition: transform 0.4s ease-in-out;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay a {
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color:  #203a43;
+  border: 2px solid  #203a43;
+  color: #fff;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.project-overlay a:hover {
+  background-color:  #203a43;
+  border-color:  #203a43;
+}
+#spanSkills{
+  background-color:  #203a43;
+}
+#SkillsHead{
+  color:  #203a43;
+}
+.active {
+  color: #425d66 !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-shadow: 0 0 5px rgba(66, 93, 102, 0.5);
+  transition: all 0.3s ease-in-out;
+}
